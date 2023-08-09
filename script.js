@@ -65,8 +65,8 @@ function getExchangeRate(){
         }
         exchangeRateText.innerText = "Getting Exchange Rate...";
 
-        // do not use this api its prohibited, use your own
-        // let url = `https://v6.exchangerate-api.com/v6/1fbb110be34d20ad0d44e38b/latest/${fromCurrency.value}`;
+        // do not use this api, its stictly prohibited, use your own
+        let url = `https://v6.exchangerate-api.com/v6/1fbb110be34d20ad0d44e38b/latest/${fromCurrency.value}`;
         // this fetches api response and returns it with parsing into js object and in them method recieves that object
         fetch(url).then(response => response.json()).then(result => {
             let exchangeRate = result.conversion_rates[toCurrency.value]; //it stores the rate of tocurrency
