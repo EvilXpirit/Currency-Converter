@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app">
+        <div class="logo">
+            <i class="fa-solid fa-coins fa-2x" id="coin-logo"></i>
+            <i class="fas fa-exchange-alt fa-2x" id="exchange-logo"></i>
+        </div>        
+        <header>Currency Converter</header>
+        <form action="#">
+            <div class="amount">
+                <p>Enter Amount</p>
+                <input type="text" value="1">
+                <div class="drop-list">
+                    <div class="from">
+                        <p>From</p>
+                        <div class="select-box">
+                            <img src="https://flagsapi.com/US/flat/64.png" alt="">
+                            <select>
+                                <!-- <option value="INR">INR</option>
+                                <option value="USD">USD</option>
+                                <option value="JYP">JYP</option>
+                                <option value="DEM">DEM</option> -->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+                    <div class="to">
+                        <p>To</p>
+                        <div class="select-box">
+                            <img src="https://flagsapi.com/IN/flat/64.png" alt="">
+                            <select>
+                                <!-- <option value="INR">INR</option>
+                                <option value="USD">USD</option>
+                                <option value="JYP">JYP</option>
+                                <option value="DEM">DEM</option> -->
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="exchange-rate">Getting Exchange Rate...</div>
+            <button>Get Exchange Rate</button>
+        </form>
+    </div>
+    <footer>By <a target="_blank" rel="noopener" href="https://github.com/EvilXpirit">EvilXpirit</a> 
+        | <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/aditya-sharma-a019a1209/">ADitya SHarma</a></footer>
+    <script src="countries.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

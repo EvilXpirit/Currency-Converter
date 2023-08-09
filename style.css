@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arimo', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url('currency.jpg') ;
+    background-size: cover;
+}
+ 
+footer{
+    color: rgb(33, 39, 44);
+    font-style: italic;
+    text-align: center;
+    padding: 10px; /* Adjust as needed */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* background-color: transparent;  */
+}
+
+.app{
+    background: rgba(206, 205, 216, 0.7);
+    min-width: 370px;
+    /* width: 25vw; */
+    padding: 30px;
+    border-radius: 3px;
+}
+
+.app header{
+    font-size: 27px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+    /* align-items: center; */
+    margin-bottom: 5px;
+}
+
+/* transition for the rotation animation */
+/* .logo.rotate i {
+    transition: transform 0.5s ease-in-out;
+    transform: rotate(180deg);
+} */
+
+.app form{
+    margin: 40px 0 5px 0;
+}
+
+form :where(input, select, button){
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.4);
+    margin: 0 0 8px 0;
+}
+
+form input{
+    height: 45px;
+    font-size: 16px;
+    /* border: 1px solid #999; */
+    padding: 0 10px;
+}
+
+form p{
+    font-size: 18px;
+    margin: 0 0 5px 0;
+}
+
+ /*this is used for an event which is 
+ when we click on the input or press tab to type*/
+form input:focus{  
+    padding: 0 0 0 14px;
+    border: 2px solid rgb(160, 160, 255);
+
+}
+
+form .drop-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0 0 0;
+}
+
+.drop-list .select-box{
+    display: flex;
+    height: 60px;
+    width: 115px;
+    align-items: center;
+    justify-content: center;
+    /* background: rgba(255, 255, 255, 0.6); */
+    /* border: 1px solid rgb(160, 160, 255); */
+    /* border-radius: 5px; */
+}
+
+.select-box select{
+    width: auto;
+    font-size: 16px;
+    margin: auto;
+    cursor: pointer;
+    /* margin: 1px; */
+    /* margin: 0 -5px 0 5px; */
+}
+
+.select-box select::-webkit-scrollbar{
+    width: 8px;
+}
+.select-box select::-webkit-scrollbar-track{
+    background: #fff;
+}
+
+.select-box select::-webkit-scrollbar-thumb{
+    background: #888;
+    border-radius: 8px;
+    border-right: 2px solid #fff;
+}
+
+.select-box img{
+    max-width: 45px;
+}
+
+.drop-list .icon{
+    cursor: pointer;
+    font-size: 20px;
+    margin: 30px 0 0 0;
+}
+
+form .exchange-rate{
+    font-size: 17px;
+    margin: 20px 0 30px;
+}
+
+form button{
+    height: 52px;
+    background-color: rgba(78, 78, 255, 0.7);
+    color: white;
+    cursor: pointer;
+}
