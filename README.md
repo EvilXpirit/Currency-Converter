@@ -12,6 +12,6 @@ A web application that allows users to convert currency amounts between differen
 
 # Technologies Used
 - HTML5, CSS3
-- JavaScript 
+- JavaScript (ES6)
 - exchangerate-api for fetching exchange rate data
 - Font Awesome for icons
